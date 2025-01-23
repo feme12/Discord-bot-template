@@ -1,19 +1,30 @@
 {
-  "name": "template",
+  "name": "discord-bot-template",
   "version": "1.0.0",
+  "description": "A basic discord bot template using discord.js, dotenv, colors and commandkit",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feme12/Discord-bot-template.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "template"
+  ],
+  "author": "feme12",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/feme12/Discord-bot-template/issues"
+  },
+  "homepage": "https://github.com/feme12/Discord-bot-template#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "commandkit": "^0.1.10",
     "discord.js": "^14.17.3",
     "dotenv": "^16.4.7"
-  },
-  "type": "module"
+  }
 }

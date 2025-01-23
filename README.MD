@@ -1,17 +1,28 @@
-# Discord bot template.
-- Base setup for a discord bot using `discord.js` `dotenv` and `commandkit`
-- Made by [feme12](https://discord.com/users/696158716617031711) & [goldmen1131](https://discord.com/users/634140757812314114)
+# 🤖 Discord Bot Template
 
-# Setup
-- Run this command to install all packages. ``npm i``
-- Go into `example.env` file and rename it to `.env` and add your discord bot token. Ex: `TOKEN=MTE3NTE5NjE0MTMxMTIzMDAzMw.G8BOqk.ZvqEW9vhS4YNMJQVKLDTO4INbdq87FJ3JRLzBY`
+- Base setup for a Discord bot using `discord.js`, `dotenv`, and `commandkit` 🚀
+- Made by [feme12](https://discord.com/users/696158716617031711) & [goldmen1131](https://discord.com/users/634140757812314114) 👥
 
-# Guild Manager
-- Used to lockdown your bot to only certain discord servers.
-- You can edit the `config.js` to your likeing.
-- You can change `enabled` to `true` to use it or to `false` to not use it.
-- You can add guilds like this `["GUILD1ID", "GUILD2ID"]`
-- You can add users like this too `["USERID1", "USERID2"]`
+## 📦 Setup
+
+- Run this command to install all packages: 
+  ```bash
+  npm i
+  ```
+- Go into the `example.env` file, rename it to `.env`, and add your Discord bot token. 
+  Example: 
+  ```
+  TOKEN=MTE3NTE5NjE0MTMxMTIzMDAzMw.G8BOqk.ZvqEW9vhS4YNMJQVKLDTO4INbdq87FJ3JRLzBY
+  ```
+
+## 🛡️ Guild Manager
+
+- Used to lock down your bot to only certain Discord servers.
+- You can edit the `config.js` to your liking.
+- Change `enabled` to `true` to use it or to `false` to disable it.
+- You can add guilds like this: `["GUILD1ID", "GUILD2ID"]`
+- You can add users like this too: `["USERID1", "USERID2"]`
+
 ```js
 export const guild_manager = {
     "enabled": false,
@@ -20,7 +31,8 @@ export const guild_manager = {
 }
 ```
 
-# Command Template `src/commands/template.js`
+## 📜 Command Template `src/commands/template.js`
+
 ```js
 import { EmbedBuilder, SlashCommandBuilder, TextChannel } from 'discord.js';
 
@@ -42,7 +54,8 @@ export const options = {
 };
 ```
 
-# Event Template `src/events/ready/template.js`
+## 🎉 Event Template `src/events/ready/template.js`
+
 ```js
 /** * @param {import('discord.js').Client} client */
 export default (client) => {
@@ -50,16 +63,21 @@ export default (client) => {
 }
 ```
 
-# Validations Template `src/validations/template.js`
+## ✅ Validations Template `src/validations/template.js`
+
 ```js
 module.exports = ({ interaction, commandObj, handler }) => {
-  if (interaction.user.id === '123123123123123' ) { // Check there user id.
+  if (interaction.user.id === '123123123123123' ) { // Check the user id.
     interaction.reply({
       content: "You are not allowed to run commands.",
       ephemeral: true,
     });
 
-    return true; // True to make it not execute the command. And false to make it execute the command.
+    return true; // True to prevent command execution, false to allow it.
   }
 };
 ```
+
+## 📜 License
+
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) ✍️
