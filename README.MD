@@ -6,6 +6,20 @@
 - Run this command to install all packages. ``npm i``
 - Go into `example.env` file and rename it to `.env` and add your discord bot token. Ex: `TOKEN=MTE3NTE5NjE0MTMxMTIzMDAzMw.G8BOqk.ZvqEW9vhS4YNMJQVKLDTO4INbdq87FJ3JRLzBY`
 
+# Guild Manager
+- Used to lockdown your bot to only certain discord servers.
+- You can edit the `config.js` to your likeing.
+- You can change `enabled` to `true` to use it or to `false` to not use it.
+- You can add guilds like this `["GUILD1ID", "GUILD2ID"]`
+- You can add users like this too `["USERID1", "USERID2"]`
+```js
+export const guild_manager = {
+    "enabled": false,
+    "guilds": [""],
+    "users": [""]
+}
+```
+
 # Command Template `src/commands/template.js`
 ```js
 import { EmbedBuilder, SlashCommandBuilder, TextChannel } from 'discord.js';

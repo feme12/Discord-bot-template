@@ -1,4 +1,4 @@
-module.exports = ({ interaction, commandObj, handler }) => {
+export default ({ interaction, commandObj, handler }) => {
     if (interaction.user.id === '123123123123123' ) { // Check there user id.
       interaction.reply({
         content: "You are not allowed to run commands.",
