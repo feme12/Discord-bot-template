@@ -78,6 +78,10 @@ module.exports = ({ interaction, commandObj, handler }) => {
 };
 ```
 
+## 🐞 Reporting Bugs
+
+If you encounter any bugs or issues while using this bot, please submit an issue on GitHub using the [bug report template](https://github.com/feme12/Discord-bot-template/issues/new?template=bug_report.md). Your feedback is valuable and helps improve the project! 🛠️
+
 ## 📜 License
 
 This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) ✍️
