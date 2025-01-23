@@ -28,8 +28,8 @@ new CommandKit({
     eventsPath: "", // Path to events folder.
     validationsPath: "", // Path to validations folder (the things that run before the command code is ran.).
     commandsPath: "", // Path to the commands folder where your command files are stored.
-    skipBuiltInValidations: false, // Weather or not you want to skip things like dev only checks.
-    bulkRegister: false // Weather or not all commands load at once.
+    skipBuiltInValidations: false, // Whether or not you want to skip things like dev only checks.
+    bulkRegister: false // Whether or not all commands load at once.
 })
 
 // Logging into your discord bot.
