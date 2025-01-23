@@ -80,7 +80,7 @@ module.exports = ({ interaction, commandObj, handler }) => {
 
 ## 🐞 Reporting Bugs
 
-If you encounter any bugs or issues while using this bot, please submit an issue on GitHub using the [bug report template](https://github.com/feme12/Discord-bot-template/issues/new?template=bug_report.md). Your feedback is valuable and helps improve the project! 🛠️
+If you encounter any bugs or issues while using this template, please submit an issue on GitHub using the [bug report template](https://github.com/feme12/Discord-bot-template/issues/new?template=bug_report.md). Your feedback is valuable and helps improve the project! 🛠️
 
 ## 📜 License
 
