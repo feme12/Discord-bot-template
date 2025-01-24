@@ -6,12 +6,12 @@
 ## 📦 Setup
 
 - Run this command to install all packages: 
-  ```bash
+  ```css
   npm i
   ```
 - Go into the `example.env` file, rename it to `.env`, and add your Discord bot token. 
   Example: 
-  ```
+  ```js
   TOKEN=MTE3NTE5NjE0MTMxMTIzMDAzMw.G8BOqk.ZvqEW9vhS4YNMJQVKLDTO4INbdq87FJ3JRLzBY
   ```
 
