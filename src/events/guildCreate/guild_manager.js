@@ -14,7 +14,7 @@ export default (client) => {
                 if (guild_manager.guilds.includes(guild.id)) return; // Return if the guild is whitelisted.
                 
                 // Check if the guild owner ID is in the whitelisted users.
-                if (guild_manager.users.includes(guild.ownerId)) return; // Return if the owner is whitelisted.
+                if (guild_manager.user_ids.includes(guild.ownerId)) return; // Return if the owner is whitelisted.
 
                 guild.leave(); // Leave the guild as they are not whitelisted.
                 console.log(`I have left an unwhitelisted guild "${guild.name}(${guild.id})"`.red); // Log the action.
