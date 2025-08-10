@@ -17,11 +17,11 @@ const client = new Client({
     // Basic intents
     intents: [
         GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMessages.
         GatewayIntentBits.GuildMembers,
         GatewayIntentBits.GuildPresences,
         GatewayIntentBits.DirectMessages,
         GatewayIntentBits.Guilds,
-        GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildModeration
     ]
 })
