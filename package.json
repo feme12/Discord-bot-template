@@ -23,7 +23,7 @@
   "homepage": "https://github.com/feme12/Discord-bot-template#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "commandkit": "^0.1.10",
+    "commandkit": "^1.2.1",
     "discord.js": "^14.25.1",
     "dotenv": "^17.3.1"
   }
